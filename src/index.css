@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --light-background-color: #e6e6e6;
+  --dark-background-color: black;
+  --light-text-primary: #053c5e;
+  --dark-text-primary: #3db2ff;
+  --light-text-secondary: black;
+  --dark-text-secondary: #fff;
+  --light-primary-color: #faf3f3;
+  --dark-primary-color: #E8F6EF;
+  
+}
+
+.lightTheme {
+  --background-color: var(--light-background-color);
+  --text-primary: var(--light-text-primary);
+  --text-secondary: var(--light-text-secondary);
+  --primary-color: var(--light-primary-color);
+}
+.darkTheme {
+  --background-color: var(--dark-background-color);
+  --text-primary: var(--dark-text-primary);
+  --text-secondary: var(--dark-text-secondary);
+  --primary-color: var(--dark-primary-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: var(--background-color);
+}
+
+/* transition for sidebar */
+
+.slide-in-left-enter {
+  transform: translateX(-100%);
+}
+
+.slide-in-left-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 200ms;
+}
+
+.slide-in-left-exit {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.slide-in-left-exit-active {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 200ms;
+}

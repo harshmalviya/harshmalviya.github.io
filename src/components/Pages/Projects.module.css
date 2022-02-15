@@ -1,0 +1,44 @@
+.projects {
+  margin: 15vh 0;
+}
+.heading {
+  display: inline-block;
+  color: var(--text-primary);
+  background-color: white;
+}
+.projectholder {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: conic-gradient(#0000 10%, var(--text-primary));
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 4px), #000 0);
+  animation: load 1s infinite linear;
+}
+@keyframes load {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* ____________________ */
+@media (max-width: 1200px) {
+  .projectholder {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .projectholder {
+    grid-template-columns: 1fr;
+  }
+}

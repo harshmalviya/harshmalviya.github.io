@@ -1,0 +1,50 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #053c5e;
+  background-color: var(--primary-color);
+  margin: 1rem 1rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+.main > h1 {
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.main > p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  font-weight: bold;
+}
+.main > img {
+  width: 15rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+  /* border: 2px solid rebeccapurple; */
+}
+.main:hover {
+  box-shadow: 0 5px 25px rgba(5, 60, 94, 0.4);
+  transform: scaleZ(2);
+}
+
+.actions {
+  margin: 2rem auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.actions > a {
+  display: block;
+  border-radius: 5px;
+  color: whitesmoke;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  background-color: var(--text-primary);
+}
+
+.actions > a:hover {
+  background-color: hsl(203, 90%, 50%);
+}

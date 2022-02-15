@@ -1,0 +1,87 @@
+.nav {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  padding: 1rem 10rem;
+  position: fixed;
+  top: 0;
+  transition: all 0.5s;
+  transition-timing-function: ease-in;
+}
+.nav a {
+  text-decoration: none;
+}
+.nav__black {
+  background-color: var(--primary-color);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.nav__ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav__ul > li {
+  margin: 0 1rem;
+}
+
+.nav__ul > li > a {
+  display: flex;
+  align-items: center;
+  color: var(--text-primary);
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  font-size: 1.3rem;
+}
+
+.nav__name {
+  margin-left: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  color: var(--text-primary)
+}
+.hamburger svg {
+  font-size: 2rem;
+}
+.selected {
+  background-color: #fff;
+  padding: 2px 4px;
+}
+.toggle {
+  font-weight: 700;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+.toggle svg {
+  font-size: 1.7rem;
+}
+
+@media (max-width: 60rem) {
+  .nav {
+    padding: 1rem 2rem;
+  }
+  .nav__ul {
+    display: none;
+  }
+  .hamburger {
+    font-size: 2rem;
+    display: inline-flex;
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,22 @@
+main {
+  width: 70%;
+  margin: auto;
+}
+
+
+
+@media (max-width: 1200px) {
+  main {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    width: 85%;
+  }
+}
+@media (max-width: 576px) {
+  main {
+    width: 95%;
+  }
+}

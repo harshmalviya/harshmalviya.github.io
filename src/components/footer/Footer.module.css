@@ -1,0 +1,41 @@
+.footer {
+  height: 2.5rem;
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+.gmail {
+  display: flex;
+  cursor: pointer;
+}
+
+.mobilefooter {
+  display: none;
+}
+
+@media (max-width: 40rem) {
+  .footer {
+    display: none;
+  }
+  .mobilefooter {
+    height: 5vh;
+    display: block;
+    background-color: var(--primary-color);
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+}

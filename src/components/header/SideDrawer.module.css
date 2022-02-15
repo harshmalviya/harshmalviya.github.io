@@ -1,0 +1,56 @@
+.SideDrawer {
+  height: 100vh;
+  width: 75%;
+  position: fixed;
+  top: 0;
+  z-index: 101;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  padding: 2rem;
+  font-size: 2.5rem;
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+}
+.logo a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.list {
+  margin-top: auto;
+  margin-bottom: auto;
+  list-style: none;
+}
+.list li {
+  display: flex;
+  padding: 1rem 5rem;
+  align-items: center;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+}
+
+li a {
+  margin-left: 0.5rem;
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.selected {
+  background-color: #fff;
+  padding: 2px 4px;
+  border-radius: 5px;
+}
+
+.toggle {
+  font-weight: 700;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+.toggle svg {
+  font-size: 2rem;
+}
