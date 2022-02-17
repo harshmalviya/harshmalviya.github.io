@@ -26,6 +26,18 @@ function Home() {
             <span className={classes.text_1}>Fullstack Developer</span>
             <span className={classes.text_2}>React Js Fan ♥</span>
           </h1>
+          <div className={classes.cta}>
+            <button className={classes.btn}>
+              <i className="fa-solid fa-download"></i>
+              <a
+                className={classes.btn_link}
+                href="/harshmalviya.pdf"
+                download="harshmalviya.pdf"
+              >
+                Download Resume
+              </a>
+            </button>
+          </div>
         </div>
         <img className={classes.home__image} src={home} alt="" />
       </section>

@@ -207,7 +207,31 @@
 .contactLink {
   color: var(--text-primary);
 }
+.cta {
+  margin: 2rem auto;
+  margin-bottom: 0;
+}
 
+.btn {
+  padding: 0.35rem 0.7rem;
+  color: white;
+  background-color: var(--text-primary);
+  border-radius: 5px;
+  border: none;
+  font-size: 1.15rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: var(--text-primary);
+}
+
+.btn_link {
+  text-decoration: none;
+  margin-left: 0.5rem;
+  color: inherit;
+}
 @media (max-width: 40rem) {
   .home {
     padding: 14vh 0;
